@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'workout.apps.WorkoutConfig',
+    'account',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -67,6 +69,7 @@ TEMPLATES = [
         },
     },
 ]
+AUTH_USER_MODEL = 'account.Account'
 
 WSGI_APPLICATION = 'trackstar.wsgi.application'
 
